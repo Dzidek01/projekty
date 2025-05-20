@@ -23,7 +23,7 @@ const Dashboard = ({ selectedHotelId, setSelectedHotelId }) => {
 
             try {
                 // Pobieranie rezerwacji
-                const reservationsResponse = await fetch(`http://192.168.18.2:5000/reservations/${selectedHotelId}`);
+                const reservationsResponse = await fetch(`localhost:5000/reservations/${selectedHotelId}`);
                 if (!reservationsResponse.ok) {
                     throw new Error('Błąd podczas pobierania rezerwacji');
                 }
