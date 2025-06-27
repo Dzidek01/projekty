@@ -6,7 +6,7 @@ from flask_cors import CORS
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
-    CORS(app,supports_credentials=True , origins=["http://192.168.18.2:3000"])
+    CORS(app,supports_credentials=True , origins=[""])
 
 
     @app.route('/')
